@@ -18,6 +18,7 @@ namespace ComicBookGalleryModel.Models
         public string Title { get; set; }
         public string Description { get; set; }
 
+
         public ICollection<ComicBook> ComicBooks { get; set; }
     }
 }
