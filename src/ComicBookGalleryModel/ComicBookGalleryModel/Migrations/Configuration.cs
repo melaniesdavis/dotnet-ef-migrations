@@ -25,6 +25,7 @@ namespace ComicBookGalleryModel.Migrations
                 new Role() { Id = roleIdPencils, Name = "Pencils" }
             );
 
+#if DEBUG
             const int artistIdStanLee = 1;
             const int artistIdSteveDitko = 2;
 
@@ -96,6 +97,7 @@ namespace ComicBookGalleryModel.Migrations
                 cb => cb.Id,
                 comicBook3
             );
+#endif
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
